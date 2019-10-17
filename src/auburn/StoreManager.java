@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class StoreManager {
     public static final String DBMS_SQ_LITE = "SQLite";
-    public static final String DB_FILE = "C:\\Users\\TheOn\\Desktop\\activity11\\database\\store.db";
+    public static final String DB_FILE = "C:\\Users\\TheOn\\Desktop\\activity11\\data\\store.db";
 
     IDataAdapter adapter = null;
     private static StoreManager instance = null;

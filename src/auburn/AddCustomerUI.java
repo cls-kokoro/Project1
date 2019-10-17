@@ -112,8 +112,9 @@ public class AddCustomerUI {
             customer.mPhone = number;
 
             switch (StoreManager.getInstance().getDataAdapter().saveCustomer(customer)) {
-                case SQLiteDataAdapter.PRODUCT_DUPLICATE_ERROR:
+                case SQLiteDataAdapter.CUSTOMER_DUPLICATE_ERROR:
                     JOptionPane.showMessageDialog(null, "Customer NOT added successfully! Duplicate customer ID!");
+                    break;
                 default:
                     JOptionPane.showMessageDialog(null, "Customer added successfully!" + customer);
             }
